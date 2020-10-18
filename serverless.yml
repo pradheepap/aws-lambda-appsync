@@ -1,0 +1,19 @@
+service: aws-lambda-appsync
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: us-east-1
+
+plugins:
+  - serverless-appsync-plugin
+
+functions:
+  getEventsDS:
+    handler: handler.getEventsDS
+
+resources:
+  - ${file(resources/aws-appsync.yml)
+  - ${file(resources/aws-iam.yml)
