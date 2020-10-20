@@ -1,0 +1,15 @@
+type AnotherEvent {
+	eventName: String
+	eventDate: String
+}
+
+type Event {
+	name: String
+	date: String
+	venue: String
+}
+
+type Query {
+	listEvents: [Event]
+	getAllEvents: [AnotherEvent]
+}

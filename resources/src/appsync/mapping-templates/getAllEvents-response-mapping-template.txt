@@ -1,0 +1,9 @@
+#set($events = [])
+#foreach($item in ${context.result})
+    #set($map = {})
+    $util.qr($map.put("eventName", $item.name))
+    $util.qr($map.put("eventDate", $item.date))
+    $util.qr($events.add($map))
+#end
+
+$util.toJson($events)

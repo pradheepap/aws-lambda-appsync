@@ -2,7 +2,7 @@
     AWSLambdaAppSyncServiceRole:
       Type: "AWS::IAM::Role"
       Properties:
-        RoleName: "Lambda-AppSyncServiceRole"
+        RoleName: "Lambda-AWSLambdaAppSyncServiceRole"
         AssumeRolePolicyDocument:
           Version: "2012-10-17"
           Statement:
